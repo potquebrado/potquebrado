@@ -4,33 +4,29 @@ body {
   background: #f5f3ee;
   color: #3e5f3a;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   background-image: url('bg.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
 
+  padding-top: 70px;
+  box-sizing: border-box;
+}
 
 /* container */
 .container {
-  position: relative;
-  z-index: 1;
   text-align: center;
   width: 90%;
   max-width: 400px;
+  margin: 0 auto;
 }
 
-/* title */
-.title {
-  font-family: 'Noto Serif Display', serif;
-  font-weight: 300;
-  font-size: 34px;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+/* logo */
+.logo img {
+  width: 220px;
+  max-width: 92%;
+  margin-bottom: 5px;
 }
 
 /* description */
