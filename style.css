@@ -1,57 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pot Quebrado</title>
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #f5f3ee;
+  color: #3e5f3a;
+  min-height: 100vh;
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  background-image: url('bg.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  padding-top: 70px;
+  box-sizing: border-box;
+}
 
+/* container */
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-  <div class="container">
+/* logo */
+.logo img {
+  width: 220px;
+  max-width: 92%;
+  margin-bottom: 5px;
+}
 
-    <div class="logo">
-  <img src="logo.png" alt="Pot Quebrado">
-</div>
+/* description */
+.description {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #6b7f68;
+}
 
-    <p class="description">
-      Restaurante charmoso em Bichinho, a 7km de Tiradentes/MG. Esperamos você!
-    </p>
+/* links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
-    <div class="links">
+/* buttons */
+.btn {
+  display: block;
+  padding: 16px;
+  background: white;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #3e5f3a;
+  font-weight: 400;
+  border: 1px solid #e0dbcf;
+  transition: 0.2s;
+}
 
-      <a href="menus/menu-pt.pdf" target="_blank" class="btn primary">
-        Cardápio
-      </a>
+.btn:hover {
+  background: #eae6db;
+}
 
-      <a href="menus/menu-en.pdf" target="_blank" class="btn">
-        🇬🇧 Menu
-      </a>
+/* primary */
+.primary {
+  background: #3e5f3a;
+  color: white;
+  border: none;
+}
 
-      <a href="menus/menu-es.pdf" target="_blank" class="btn">
-        🇪🇸 Menú
-      </a>
-
-      <a href="https://maps.app.goo.gl/mq2irzCQdxVdgo3C7" target="_blank" class="btn">
-        Como Chegar
-      </a>
-
-      <a href="https://maps.app.goo.gl/mq2irzCQdxVdgo3C7" target="_blank" class="btn">
-        Avaliações
-      </a>
-
-      <a href="https://www.instagram.com/potquebrado/" target="_blank" class="btn">
-        Instagram
-      </a>
-
-    </div>
-
-  </div>
-
-</body>
-</html>
+.primary:hover {
+  background: #2f4a2d;
+}
